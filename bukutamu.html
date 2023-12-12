@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buku Tamu</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bukutamu.css">
+</head>
+<body>
+
+    <h2>Buku Tamu</h2>
+
+    <form action="proses_tamu.php" method="post">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required>
+
+        <label for="alamat">Alamat:</label>
+        <input type="text" id="alamat" name="alamat" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="pesan">Pesan:</label>
+        <textarea id="pesan" name="pesan" rows="4" required></textarea>
+
+        <button type="submit">Kirim Pesan</button>
+        <button type="button" class="btn-cancel" onclick="window.location.href='batal.html'">Batal</button>
+    </form>
+
+</body>
+</html>

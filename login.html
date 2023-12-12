@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bunga</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="container">
+    <div class="login">
+        <h1>Login</h1>
+      <div class="box-input">
+        <label for="email">Email</label>
+        <input type="text" id="email" placeholder="Email" required>
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="password" requaired>
+      </div>
+      <form id="loginForm" onsubmit="return validateForm()" action="index.html">
+        <button type="submit" name="login" class="btn-input">Login</button>
+      </form>
+      <script>
+        function validateForm() {
+          var email = document.getElementById('email').value;
+          var password = document.getElementById('password').values;
+
+          if (email.trim() === '' || password.trim() === '') {
+            alert('Harap isi kolom email dan password.');
+            return false;
+          }
+        }
+      </script>
+        <p>
+          <p>Belum Punya Akun?
+            <a href="register.html">Registrasi Disini</a>
+        </p>
+        </p>
+    </div>
+    <div class="right">
+      <img src="bunga.jpeg" alt="bunga">
+    </div>
+  </div>
+</body>
+</html>

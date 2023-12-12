@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bunga</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="container">
+    <div class="register">
+        <h1>Register</h1>
+        <div class="box-input">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Username" required>
+          </div>
+        <div class="box-input">
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="Email" required>
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="password" requaired>
+        </div>
+        <form id="registerForm" onsubmit="return validateForm()" action="index.html">
+            <button type="submit" name="register" class="btn-input">Register</button>
+        </form>
+        <script>
+            function validateForm() {
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').values;
+            var username = document.getElementById('username').values;
+
+            if (email.trim() === '' || password.trim() === '' || username.trim() === '') {
+                alert('Harap isi kolom username, email dan password.');
+                return false;
+                 }
+
+                 return true;
+             }
+      </script>
+        <p>
+            <p>Sudah Punya Akun?
+                <a href="login.html">Login Disini</a>
+            </p>
+        </p>
+    </div>
+    <div class="right">
+      <img src="bunga.jpeg" alt="bunga">
+    </div>
+  </div>
+</body>
+</html>
